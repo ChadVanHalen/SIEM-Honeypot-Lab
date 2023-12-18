@@ -86,10 +86,6 @@ At this point my map was failing due to reaching my free trial limitation on the
 It was still logging attempts, but just unable to convert the IP to locations.<br/>
 In my VM I re-enabled all the firewall settings I previously disabled, and nearing 7pm I catch this final login attempt:<br/>
 <img src="https://i.postimg.cc/XNPBTvyS/23-View-of-my-last-log-before-re-configuring-firewall.png" height="80%" width="80%" alt="SOC Analyst Lab"/>
-<br />
-<br />
-The next morning I refreshed and confirmed no further attempts were logged:<br/>
-<img src="" height="80%" width="80%" alt="SOC Analyst Lab"/>
 
 
 
