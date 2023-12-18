@@ -52,7 +52,7 @@ I then use my VPN to change my location ot Belgium and attempt another failed lo
 <img src="https://i.postimg.cc/W3jwq1wf/11-Log-of-failed-Belgium-login.png" height="80%" width="80%" alt="SOC Analyst Lab"/>
 <br />
 <br />
-In Azure Sentinel, Azure's SIEM, I point it my newly created failed login log, then seeing it as available for query within Azure:  <br/>
+In Azure Sentinel, Azure's SIEM, I point it at my newly created failed login log, then seeing it as available for query within Azure:  <br/>
 <img src="https://i.postimg.cc/C5h7XxZf/12-Create-custom-log-copy-paste-from-VM-to-host-machine.png" height="80%" width="80%" alt="SOC Analyst Lab"/>
 <img src="https://i.postimg.cc/6QVdKNxV/13-Custom-log-appearing-in-LAW.png" height="80%" width="80%" alt="SOC Analyst Lab"/>
 <br />
