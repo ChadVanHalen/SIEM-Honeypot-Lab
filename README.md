@@ -1,7 +1,7 @@
 <h1>Azure Honeypot Lab</h1>
 
 <h2>Description</h2>
-This project consists of getting hands-on experience on the creation of logs from a purposefully insecure virtual machine, feeding the logs into a SIEM, seeing the results, mapping the results, then showing the attmpets stop when the VM is secured.<br/>
+This project consists of getting hands-on experience on the creation of logs from a purposefully insecure virtual machine, feeding the logs into a SIEM, seeing the results, mapping the results, then showing that the attempts stop when the VM is secured.<br/>
 <br />
 
 
