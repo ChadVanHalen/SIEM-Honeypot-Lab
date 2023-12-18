@@ -10,7 +10,7 @@ This project consists of getting hands-on experience on the creation of logs fro
 - <b>Azure</b>
 - <b>PowerShell ISE</b>
 - <b>RDP</b>
-- <b>IP-GeoLocator API</b>
+- <b>IPGeoLocator.io</b>
 
 <h2>Environments Used </h2>
 
