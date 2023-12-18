@@ -37,7 +37,7 @@ From my host machine, despite turning firewall off on the Azure level, still una
 <img src="https://i.postimg.cc/K86NFNkb/6-Ping-VM-success-after-firewall-disable.png" height="80%" width="80%" alt="SOC Analyst Lab"/>
 <br />
 <br />
-Next I used the following code which was specifically based on the API of IPGeoLocation.io to pull the failed login attempts, run the IP found in the event, run the IP through the website to get the latitude and longitude location of the login attempt. This then outputs into a .log file: <br/>
+Next I used the following code which was specifically based on the API of IPGeoLocation.io to pull the failed login attempts, pull the IP found in the event, run the IP through the website to get the latitude and longitude location of the login attempt. This then outputs into a .log file: <br/>
  https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1<br/>
 <img src="https://i.postimg.cc/XYG8Thvx/7-Power-Shell-ISE-Log-Exporter-Script.png" height="80%" width="80%" alt="SOC Analyst Lab"/>
 <br />
@@ -47,7 +47,7 @@ Here we can see the previous attempts have been pulled and the IP was converted 
  <img src="https://i.postimg.cc/DfPYgtWX/9-Log-data-with-sample-data-my-failed-login.png" height="80%" width="80%" alt="SOC Analyst Lab"/>
 <br />
 <br />
-I then use my VPN to change my location ot Belgium and attempt another failed login to see if the location in the lof matches as well. It successfully tracks the attempt being from Belgium:  <br/>
+I then use my VPN to change my location ot Belgium and attempt another failed login to see if the location in the log matches as well.<br/>It successfully tracks the attempt being from Belgium:  <br/>
 <img src="https://i.postimg.cc/zvx7rYW2/10-Failed-login-from-Belgium.png" height="80%" width="80%" alt="SOC Analyst Lab"/>
 <img src="https://i.postimg.cc/W3jwq1wf/11-Log-of-failed-Belgium-login.png" height="80%" width="80%" alt="SOC Analyst Lab"/>
 <br />
