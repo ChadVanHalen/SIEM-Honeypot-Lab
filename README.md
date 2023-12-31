@@ -42,7 +42,7 @@ Next I used the following code which was specifically based on the API of IPGeoL
 <img src="https://i.postimg.cc/XYG8Thvx/7-Power-Shell-ISE-Log-Exporter-Script.png" height="80%" width="80%" alt="SOC Analyst Lab"/>
 <br />
 <br />
-Here we can see the previous attempts have been pulled and the IP was converted into a physical location. Then the output also appearing in the log file:  <br/>
+Here we can see the previous attempts have been pulled and the IP was converted into a physical location. I then show this output also appearing in the log file:  <br/>
 <img src="https://i.postimg.cc/gJq4gZ0W/8-Running-script-confirm-log-output.png" height="80%" width="80%" alt="SOC Analyst Lab"/>
  <img src="https://i.postimg.cc/DfPYgtWX/9-Log-data-with-sample-data-my-failed-login.png" height="80%" width="80%" alt="SOC Analyst Lab"/>
 <br />
@@ -75,7 +75,7 @@ After less than 90 minutes of making, eating then cleaning dinner, I came back t
 <br />
 <br />
 The following are snapshots of the Russian login attempts, you can see they were brute forcing passwords using common login credentials like Administrator, admin, guest, etc:<br/>
-According to https://www.reddit.com/r/codes/comments/yy0wha/encoded_russian_default_usernames_i_cant_figure/ the non-Latin characters being tested on the VM were Codepage 1251, which is how Cyrillic is displayed on Windows systems. Decoding the characters into Cyrillic and then into English shows us attempts like "administrators", "guest", etc<br/>
+According to https://www.reddit.com/r/codes/comments/yy0wha/encoded_russian_default_usernames_i_cant_figure/ the non-Latin characters being tested on the VM were Codepage 1251, which is how Cyrillic is displayed on Windows systems. Decoding the characters into Cyrillic and then into English shows login attempts like "administrators", "guest", etc<br/>
 <img src="https://i.postimg.cc/K8BT7yjX/19-Russian-attempts-admin-Administrator.png" height="80%" width="80%" alt="SOC Analyst Lab"/>
 <img src="https://i.postimg.cc/CK0qm6nR/20-More-login-attempts.png" height="80%" width="80%" alt="SOC Analyst Lab"/>
 <img src="https://i.postimg.cc/Tw752d7b/21-More-login-attempts.png" height="80%" width="80%" alt="SOC Analyst Lab"/>
@@ -84,7 +84,7 @@ According to https://www.reddit.com/r/codes/comments/yy0wha/encoded_russian_defa
 <br/>
 At this point my map was failing due to reaching my free trial limitation on the IP location API, would have been interesting to see how many different locations would have tried to brute force into my VM, but I had to call it here.<br/>
 It was still logging attempts, but just unable to convert the IP to locations.<br/>
-In my VM I re-enabled all the firewall settings I previously disabled, and nearing 7pm I catch this final login attempt:<br/>
+In my VM I re-enabled all the firewall settings I previously disabled, and nearing 7pm I catch this final login attempt. After re-enabling the firewall there were no more RDP attempts.:<br/>
 <img src="https://i.postimg.cc/XNPBTvyS/23-View-of-my-last-log-before-re-configuring-firewall.png" height="80%" width="80%" alt="SOC Analyst Lab"/>
 
 
